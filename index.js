@@ -43,7 +43,7 @@ client.on('message', (message) => {
     let img = 'https://cdn.discordapp.com/attachments/725668646134874223/770545083723939840/1.jpg';
     var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
     embed.setColor('#186de6')
-    embed.setAuthor('server info of 오리봇', img)
+    embed.setAuthor('server info of Duck`s Farm', img)
     embed.setFooter(`오리봇`)
     embed.addBlankField()
     embed.addField('RAM usage',    `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true);
@@ -143,9 +143,9 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!전체공지2'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('공지 of 오리봇')
+        .setAuthor('공지 of Duck`s Farm')
         .setColor('#186de6')
-        .setFooter(`오리봇)
+        .setFooter(`오리봇`)
         .setTimestamp()
   
       embed.addField('공지: ', contents);
